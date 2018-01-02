@@ -1,0 +1,76 @@
+---
+title: "Sanford formula"
+author: "kou"
+date: "2017”N12ŒŽ30“ú"
+output: html_document
+---
+
+## Creatinine clearance formula by Sanford
+
+ In Sanford guideline, to calculate eGFR two different formula, *non-obase* and *obase*, is used.  
+
+ First we need to calculate ideal body weight (IBW) and body mass index (BMI)  
+* IBW  
+    * male  
+$$
+IBW_{(male)} = 50kg + 2.3kg\times (height(inch) - 60 inch)
+$$
+    * female
+$$
+IBW_{(female)} = 45kg + 2.3kg\times (height(inch) - 60 inch)
+$$
+
+**If height <= 60inch, IBW = 50kg (male) or 60kg (female)**  
+**1 inch = about 2.54 cm, 60 inch = about 152.4 cm**  
+
+* BMI  
+
+$$
+BMI = \frac{BW(kg)}{height(m)^2}
+$$
+ Obese is defined as 20% over IBW or BMI > 30
+
+* non-obese formula  
+    * male
+$$
+CCr_{(male)}   = \frac{(140 - Age)\times IBW}{72\times Scr}
+$$
+    * female
+$$
+CCr_{(female)} = \frac{(140 - Age)\times IBW}{72\times Scr}\times 0.85
+$$
+
+
+* obese formula  
+    * male
+$$
+CCr_{(male)}   = \frac{(137 - Age)\times ((0.285\times BW(kg) + (12.1\times  height(m)^2))}{51\times Scr}
+$$
+    
+    * female
+$$
+CCr_{(female)}   = \frac{(146 - Age)\times ((0.287\times BW(kg) + (9.74\times  height(m)^2)}{60\times Scr}
+$$
+
+* This is reference of Sanford formula (NCBI)
+    * non-obese patients
+[N Engl J Med 354:2473, 2006](http://www.ncbi.nlm.nih.gov/pubmed/16760447/)  
+    * obese patients
+[Am J Med 84:1053, 1988](http://www.ncbi.nlm.nih.gov/pubmed/3376975/)
+
+## Other constideration to dose adjustments of antibiotics
+
+* For non-obese people  
+use the patient's actual weight for all drugs  
+
+* For obese people  
+    * *Aminoglycosides*: adjusted weight calculation as follow  
+$$
+adjusted weight = (IBM + 0.4\times (BW -IBW))
+$$
+    * *Vancomycin*: use actual body weight whether non-obese or obese  
+    * *all other drugs*: insufficient data (reference as follow)  
+      [Pharmacotherapy 27:1081, 2007](http://www.ncbi.nlm.nih.gov/pubmed/17655508/)
+
+* For slow extended daily dialysis (SLEDD) over 6-12 hours, adjust dose as for continuous renal replacement therapy (CRRT). (reference as follow)    
+ [Clin Dis 49:433, 2009](https://www.ncbi.nlm.nih.gov/pubmed/19580416/)  

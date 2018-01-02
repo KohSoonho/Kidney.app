@@ -1,0 +1,16 @@
+---
+title: "CKD Stage (Japanese)"
+author: "kou"
+date: "2017”N12ŒŽ28“ú"
+output: html_document
+---
+
+## CKD stage for Japanese people  
+
+This table is quoted from *"JSN CKD guideline 2012"*.  
+This guide line recommend Japanese formula to calculate eGFR.  
+
+<img src="staging.jpg" width="700" height="500">
+
+* reference  
+[JSN CKD guideline 2013](https://cdn.jsn.or.jp/guideline/pdf/CKD_evidence2013/all.pdf)  

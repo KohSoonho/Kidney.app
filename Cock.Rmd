@@ -1,0 +1,43 @@
+---
+title: "Cockcroft"
+author: "kou"
+date: "2017”N12ŒŽ26“ú"
+output: html_document
+---
+
+## Cockcroft-Gault formula
+
+<details><summary>Why is creatinine clearance important?</summary>Creatinine is metabolic products from muscle. Creatinine is not reabsorbd and only few creatinine is secreted at renal tube.  
+So, creatinint clearance (CCr) resembles in glomerular filtration rate (GFR).  
+CCr was calculated by this formula from urine test.  
+$$
+CCr(ml/min) = \frac{Ucr(mg/dL) \times UV(mL/day)}{Scr(mg/dL)\times 1440(min/day)}* \frac{1.73}{BSA(m^2)}\\
+\\
+Ucr: urine creatinine, Scr: serum creatinine, UV: urine volume, BSA: body surface area
+$$
+</details>
+
+
+<details><summary>Why is these formula made?</summary>To determine creatinine clearance, urine test is need. But urine test is time-consuming...  
+Many doctors want to determine creatinine clearance only from serum creatinine.  
+</details>
+
+***
+
+ In 1973, ***Cockcroft-Gault*** formula are proposed.  
+This formula is estimated by 249 participants. (The range of their creatinine is 30 - 130 mL/min)  
+
+* Cockcroft-Gault formula  
+    * male
+$$
+CCr_{(male)}   = \frac{(140 - Age)\times BW}{72\times Scr}
+$$
+    * female
+$$
+CCr_{(female)} = \frac{(140 - Age)\times BW}{72\times Scr}\times 0.85
+$$
+
+
+* This is reference of Cockcroft-Gault (NCBI)
+
+[Cockcroft, D.W. and M.H. Gault. Prediction of creatinine clearance from serum creatinine. Nephron. 1976. 16(1):31-41.](https://www.ncbi.nlm.nih.gov/pubmed/1244564)

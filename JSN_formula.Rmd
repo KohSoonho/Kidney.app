@@ -1,0 +1,32 @@
+---
+title: "Japanese formula"
+author: "kou"
+date: "2017”N12ŒŽ28“ú"
+output: html_document
+---
+
+## eGFR formula for Japanese people
+
+ MDRD formula has a problem that this is underestimate eGFR of young and <60 ml/min GFR.  
+ So, Matsuo et.al try to create a new formula for Japanese people.
+
+* Japanese formula  
+    * male
+$$
+eGFR_{(male)}   = 194\times (Age)^{-0.287}\times (Scr)^{-1.1094}
+$$
+    * female
+$$
+eGFR_{(female)} = 186\times (Age)^{-0.287}\times (Scr)^{-1.1094}\times 0.739
+$$
+
+This formula is made 413 Japanese participants, and this formula is more accurate for Japanese population than the previously reported formula.    
+
+eGFR from Japanese formula is need to adjust by BSA, the same as MDRD formula.  
+
+$$
+eGFR_{(adj-BSA)}=eGFR\times \frac{BSA}{1.73}
+$$
+
+* This is reference of Japanese formula (NCBI)  
+[Matsuo S, Imai E, Horio M, Yasuda Y, Tomita K, Nitta K, Yamagata K, Tomino Y, Yokoyama H, Hishida A. Revised equations for estimated GFR from serum creatinine in Japan. Am J Kidney Dis 53(6):932, 2009](https://www.ncbi.nlm.nih.gov/pubmed/19339088)

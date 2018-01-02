@@ -1,0 +1,49 @@
+---
+title: "MDRD(enzyme)"
+author: "kou"
+date: "2017”N12ŒŽ28“ú"
+output: html_document
+---
+
+## MDRD formula by enzymatic assay
+
+ In many countries including USA, Scr is determined ***"Jaffe reaction method"***.  
+But, some regions including Japan, Scr is determined ***"enzymatic assay"***.  
+
+#### Below the reference of these method (TOYOBO news letter at 2006)
+* [Jaffe reaction method](http://www.toyobo.co.jp/seihin/dsg/technical/newsletter/img/006.pdf)  
+* [enzymatic assay](http://www.toyobo.co.jp/seihin/dsg/technical/newsletter/img/007.pdf)  
+
+ So, new MDRD formula are proposed to use Scr measured by enzymatic assay in 2006.  
+ 
+* MDRD formula (enzyme)
+    * caucasians male  
+$$
+eGFR_{(male)}=175\times (Age)^{-0.203}\times (Scr)^{-1.154}
+$$
+    * caucasians female
+$$
+eGFR_{(male)}=175\times (Age)^{-0.203}\times (Scr)^{-1.154}\times 0.742
+$$
+
+ This value from MDRD is need to adjust by BSA, too.  
+$$
+eGFR_{(adj-BSA)}=GFR\times \frac{BSA}{1.73}
+$$
+
+* MDRD formula adjusted by race  
+The coefficitnt of Japanese is deteremined 0.741 by Japanese Society of Nephrology (JSN).  
+    * Japanese male  
+$$
+eGFR_{(male)}=175\times (Age)^{-0.203}\times (Scr)^{-1.154}\times 0.741
+$$
+    * Japanese female
+$$
+eGFR_{(male)}=175\times (Age)^{-0.203}\times (Scr)^{-1.154}\times 0.742\times 0.741
+$$
+
+ But this formula is not recommended by JSN. To calculate eGFR of Japanese, JSN recommend new Japanese formula at 2009 (see Japanese formula).  
+ 
+* This is reference of MDRD (enzyme) for Japanese (NCBI)  
+[imai E, Horio M, Yamagata K, Iseki K, Tsukamoto Y, Ito S, Makino H, Hishida A, Matsho S. Modification of the Modification of Diet in Renal Disease (MDRD) Study equation for Japan. Am J Kidney Dis 2007; 50: 927-937.](http://www.ncbi.nlm.nih.gov/pubmed/18037093)
+

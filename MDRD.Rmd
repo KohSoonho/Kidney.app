@@ -1,0 +1,49 @@
+---
+title: "MDRD"
+author: "kou"
+date: "2017”N12ŒŽ27“ú"
+output: html_document
+---
+
+## Modification of Diet in Renal Disorders (MDRD) formula
+
+ In 1999, Leveys proposed MDRD formula by stufy of chronic kidney disease (CKD) patients.  
+***MDRD formula*** are proposed to determine the grade of CKD.
+
+* MDRD formula  
+    * caucasians male
+$$
+eGFR_{(male)}   = 186\times (Age)^{-0.203}\times (Scr)^{-1.154}
+$$
+    * caucasians female
+$$
+eGFR_{(female)} = 186\times (Age)^{-0.203}\times (Scr)^{-1.154}\times 0.742
+$$
+
+This formula determine GFR at standard body surface area (BSA) (1.73$m^{2}$).  
+The muscle volume is propotional to BSA (creatinine is metabolic product from muscle).  
+So, the production of creatinine is propotional to BSA.  
+
+This value from MDRD is need to adjust by BSA.  
+
+$$
+eGFR_{(adj-BSA)}=GFR\times \frac{BSA}{1.73}
+$$
+
+ In 2005, MDRD formula is adjusted to modify the difference between race.  
+For blacks, GFR is multiplied by a coefficient (1.212). 
+
+* MDRD formula adjusted by race  
+    * blacks male
+$$
+GFR_{(male)}   = 186\times (Age)^{-0.203}\times (Scr)^{-1.154}\times 1.212
+$$
+    * blacks female
+$$
+GFR_{(female)} = 186\times (Age)^{-0.203}\times (Scr)^{-1.154}\times 0.742\times 1.212
+$$
+
+
+* This is reference of MDRD (NCBI)
+
+[Levey AS, Bosch JP, Lewis JB, et.al. A more accurate method to estimate glomerular filtration rate from serum creatinine: a new prediction equation. Ann Intern Med; 130: 461-70, 1999.](https://www.ncbi.nlm.nih.gov/pubmed/10075613)  
