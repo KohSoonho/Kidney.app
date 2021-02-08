@@ -1,7 +1,7 @@
 ---
 title: "Cockcroft"
 author: "kou"
-date: "2017”N12ŒŽ26“ú"
+date: "12/26/2017"
 output: html_document
 ---
 

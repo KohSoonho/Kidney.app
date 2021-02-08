@@ -1,7 +1,7 @@
 ---
 title: "Sanford formula"
 author: "kou"
-date: "2017”N12ŒŽ30“ú"
+date: "12/30/2017"
 output: html_document
 ---
 
